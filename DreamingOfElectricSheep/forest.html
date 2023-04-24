@@ -83,6 +83,37 @@ document.onkeydown = function(e) {
       video.currentTime += 10;
       break;
   }
+  
+    
+} 
+
+<h1>(slowed-down animation)</h1>
+      
+<div class="video-container">
+<video id="forest2_compressed" width="1920" height="1020" controls>
+  <source src="forest2_compressed.mp4" type="video/mp4">
+</video>
+</div>
+
+<script>
+var video = document.getElementById("forest2_compressed");
+
+document.onkeydown = function(e) {
+  switch (e.keyCode) {
+    case 32: // spacebar
+      if (video.paused)
+        video.play();
+      else
+        video.pause();
+      break;
+    case 37: // left arrow
+      video.currentTime -= 10;
+      break;
+    case 39: // right arrow
+      video.currentTime += 10;
+      break;
+  }
+  
 };
 </script>
 

@@ -12,7 +12,7 @@ h1 {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 100px;
+      margin-top: 50px;
   }
     
     video {
@@ -36,23 +36,6 @@ h1 {
 </video>
 </div>
 
-<script>
-var video = document.getElementById("landscape");
-
-document.onkeydown = function(e) {
-  switch (e.keyCode) {
-    case 32: // spacebar
-      if (video.paused)
-        video.play();
-      else
-        video.pause();
-      break;
-    case 37: // left arrow
-      video.currentTime -= 10;
-      break;
-    case 39: // right arrow
-      video.currentTime += 10;
-      break;
   }
   
   
@@ -64,23 +47,6 @@ document.onkeydown = function(e) {
 </video>
 </div>
 
-<script>
-var video = document.getElementById("landscapeslow_compressed");
-
-document.onkeydown = function(e) {
-  switch (e.keyCode) {
-    case 32: // spacebar
-      if (video.paused)
-        video.play();
-      else
-        video.pause();
-      break;
-    case 37: // left arrow
-      video.currentTime -= 10;
-      break;
-    case 39: // right arrow
-      video.currentTime += 10;
-      break;
   }
   
 };

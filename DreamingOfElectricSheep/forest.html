@@ -28,14 +28,17 @@ h1 {
 <body>
 
   
+<h1>Animation</h1>
+  
+  
 <div class="video-container">
-<video id="landscape" width="1920" height="1020" controls>
-  <source src="landscape.mp4" type="video/mp4">
+<video id="forest1_compressed" width="1920" height="1020" controls>
+  <source src="forest1_compressed.mp4" type="video/mp4">
 </video>
 </div>
 
 <script>
-var video = document.getElementById("landscape");
+var video = document.getElementById("forest1_compressed");
 
 document.onkeydown = function(e) {
   switch (e.keyCode) {
@@ -51,6 +54,34 @@ document.onkeydown = function(e) {
     case 39: // right arrow
       video.currentTime += 10;
       break;
+     
+      
+<h1>Process</h1>
+      
+<div class="video-container">
+<video id="forest-camera" width="1920" height="1020" controls>
+  <source src="forest-camera.mov" type="video/mov">
+</video>
+</div>
+
+<script>
+var video = document.getElementById("forest-camera");
+
+document.onkeydown = function(e) {
+  switch (e.keyCode) {
+    case 32: // spacebar
+      if (video.paused)
+        video.play();
+      else
+        video.pause();
+      break;
+    case 37: // left arrow
+      video.currentTime -= 10;
+      break;
+    case 39: // right arrow
+      video.currentTime += 10;
+      break;
+     
   }
 };
 </script>

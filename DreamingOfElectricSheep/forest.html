@@ -37,27 +37,6 @@ h1 {
 </video>
 </div>
 
-<script>
-var video1 = document.getElementById("forest1_compressed");
-
-document.onkeydown = function(e) {
-  switch (e.keyCode) {
-    case 32: // spacebar
-      if (video1.paused)
-        video1.play();
-      else
-        video1.pause();
-      break;
-    case 37: // left arrow
-      video1.currentTime -= 10;
-      break;
-    case 39: // right arrow
-      video1.currentTime += 10;
-      break;
-  }
-}; 
-</script>
-
 <h1>Process</h1>
       
 <div class="video-container">
@@ -66,55 +45,13 @@ document.onkeydown = function(e) {
 </video>
 </div>
 
-<script>
-var video2 = document.getElementById("forest-camera");
-
-document.onkeydown = function(e) {
-  switch (e.keyCode) {
-    case 32: // spacebar
-      if (video2.paused)
-        video2.play();
-      else
-        video2.pause();
-      break;
-    case 37: // left arrow
-      video2.currentTime -= 10;
-      break;
-    case 39: // right arrow
-      video2.currentTime += 10;
-      break;
-  }
-};  
-</script>
-
 <h1>(slowed-down animation)</h1>
       
 <div class="video-container">
 <video id="forest2_compressed" width="1920" height="1020" controls>
-  <source src="forest2_compressed.mp4" type="video/mp4"></source>
+  <source src="forest2_compressed.mp4" type="video/mp4">
 </video>
 </div>
-
-<script>
-var video3 = document.getElementById("forest2_compressed");
-
-document.onkeydown = function(e) {
-  switch (e.keyCode) {
-    case 32: // spacebar
-      if (video3.paused)
-        video3.play();
-      else
-        video3.pause();
-      break;
-    case 37: // left arrow
-      video3.currentTime -= 10;
-      break;
-    case 39: // right arrow
-      video3.currentTime += 10;
-      break;
-  }
-};  
-</script>
 
 </body>
 </html>

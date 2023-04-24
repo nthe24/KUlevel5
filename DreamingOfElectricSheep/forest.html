@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  text-align: center;
+  font-size: 36px;
+  font-family: Monaco, sans-serif;
+
+}
+  .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 100px;
+  }
+    
+    video {
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+      width: 80%;
+      height: auto;
+    }
+</style>
+</head>
+<body>
+
+  
+<div class="video-container">
+<video id="landscape" width="1920" height="1020" controls>
+  <source src="landscape.mp4" type="video/mp4">
+</video>
+</div>
+
+<script>
+var video = document.getElementById("landscape");
+
+document.onkeydown = function(e) {
+  switch (e.keyCode) {
+    case 32: // spacebar
+      if (video.paused)
+        video.play();
+      else
+        video.pause();
+      break;
+    case 37: // left arrow
+      video.currentTime -= 10;
+      break;
+    case 39: // right arrow
+      video.currentTime += 10;
+      break;
+  }
+};
+</script>
+
+</body>
+</html>

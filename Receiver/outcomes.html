@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  text-align: center;
+  font-size: 36px;
+  font-family: Monaco, sans-serif;
+}
+  
+h2 {
+			text-align: center;
+			font-size: 28px;
+			font-family: Monaco, sans-serif;
+}
+  
+h1:first-of-type {
+			margin-bottom: 50px;
+}
+
+h2:first-of-type {
+			margin-bottom: 50px;
+}
+  
+  
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: -30px auto 0;
+}
+  .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+  }
+    
+    video {
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+</style>
+</head>
+<body>
+
+<h1>Food Wave: Final Outcomes</h1>
+
+<img src="final.gif">
+  
+<h2>(mockup)</h2>
+
+<img src="Escalator Mockup.gif">
+
+<h2>(stop motion)</h2>
+  
+<div class="video-container">
+<video id="Layers_stopmotion" width="1920" height="1020" controls>
+  <source src="Layers_stopmotion.mp4" type="video/mp4">
+</video>
+</div>
+
+<script>
+var video = document.getElementById("Layers_stopmotion");
+
+document.onkeydown = function(e) {
+  switch (e.keyCode) {
+    case 32: // spacebar
+      if (video.paused)
+        video.play();
+      else
+        video.pause();
+      break;
+  }
+};
+</script>
+
+</body>
+</html>

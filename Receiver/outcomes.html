@@ -23,7 +23,7 @@
   
 	h1:first-of-type {
 		margin-top: 50px;
-		margin-bottom: 50px;
+
 }
 
 	h2:first-of-type {
@@ -32,11 +32,19 @@
   
   
 img {
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
   display: block;
 	margin-bottom:50px;
 }
+	
+img:nth-of-type(2) {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin-bottom: 50px;
+}
+
   .video-container {
       display: flex;
       justify-content: center;
@@ -45,7 +53,7 @@ img {
   }
     
     video {
-      max-width: 80%;
+      max-width: 100%;
       height: auto;
       margin: 0 auto;
       display: block;

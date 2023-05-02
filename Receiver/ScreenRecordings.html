@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style>
+		h1 {
+			text-align: center;
+			font-size: 36px;
+			font-family: Monaco, sans-serif;
+
+		}
+
+
+		h2 {
+			text-align: center;
+			font-size: 28px;
+			font-family: Monaco, sans-serif;
+		}
+
+
+		h1:first-of-type {
+			margin-bottom: 50px;
+		}
+
+
+		h2:first-of-type {
+			margin-bottom: 50px;
+		}
+	
+	
+		.video-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin-bottom: 30px;
+		}
+		
+		.video-container video {
+			width: 48%;
+			height: auto;
+			max-width: 960px;
+			margin-bottom: 15px;
+		}
+		
+		@media screen and (max-width: 991px) {
+			.video-container video {
+				width: 100%;
+				margin-bottom: 30px;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Food Wave</h1>
+
+	<h2>(screen recordings)</h2>
+
+	<div class="video-container">
+		<video controls>
+			<source src="Bread.mp4" type="video/mp4">
+		</video>
+		<video controls>
+			<source src="Veg.mp4" type="video/mp4">
+		</video>
+	</div>
+	
+	<div class="video-container">
+		<video controls>
+			<source src="Fruit.mp4" type="video/mp4">
+		</video>
+		<video controls>
+			<source src="Meat.mp4" type="video/mp4">
+		</video>
+	</div>
+
+</body>
+</html>
